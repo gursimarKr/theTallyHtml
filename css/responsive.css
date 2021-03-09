@@ -1,0 +1,245 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* homepage */
+    /* section one */
+    .topRankedButton{
+        margin-left:  -2%;
+    }
+    .tallyWorkHeading{
+        font-size:35px;}
+        /* sectionTwo */
+
+    tallyLargeText{
+        font-size: 23px;
+    }
+/* section three */
+
+.ageImage{
+    height: 850px;
+    width: 850px;
+    margin-left: -50%;
+}
+.ageContainer{
+    position: relative;
+    overflow: hidden;
+}
+.ageContainerText{
+    margin-left: -14%;
+    margin-bottom: 20%;
+    top:-40%;
+}
+.headerText{
+    font-size: 40px;
+}
+
+.ageContainerText{
+    margin-left: -25%;
+    margin-bottom: 5%;
+    top: 3%;
+}
+.ageImagePolygon{
+    right: -1%;
+}
+.largeText{
+    font-size: 22px;
+    padding: 0 10%
+}
+.ageSlider{
+    margin-bottom: 15%;
+}
+.postContainer{
+    width: 184px;
+    height: 220px;
+}
+.postImageSize{
+    margin-top: -59%;
+}
+.AgeUppercaseText{
+    margin-top: 11%;
+    margin-left: 7%;
+}
+/* section four */
+.categoryText{
+    font-size: 40px;
+    margin-left: -48%;
+}
+.categoryLargeText{
+    margin-left:-44%;
+}
+.categoryImage{
+    width: 34%;
+}
+.postImage{
+    margin-left: 19%;
+}
+.postItem{
+    margin-left: 19%;
+}
+.postImageSize{
+    height: 216px;
+}
+.postBody p{
+    font-size: 16px;
+}
+/* section five */
+.latestContent img{
+    width: 215px;
+    height: 215px;
+}
+.latestContent p{
+    font-size: 24px;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* section six */
+.searchImage{
+    margin-left: -28%;
+}
+/* section seven */
+.largeText{
+    padding: 5%;
+}
+.finalText{
+    margin-left:10%;
+    font-size:20px;
+
+}
+.imageFinalContainer{
+    margin-top: 3%;
+}
+.finalImageTwo{
+    margin-top: 122%;
+}
+.finalImage{
+    margin-left: -30%;
+    margin-top: 39%;
+}
+.finalSignature{
+    margin-left: 15%;
+}
+
+/* blogDetails page */
+/* section one */
+.childSection{
+    font-size: 24px;
+
+}
+/* section two */
+.tratmentSectionOne, .tratmentSectionTwo p{
+    font-size: 24px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.tratmentSectionTwo ul{
+    font-size: 24px;
+    font-family: 'Roboto',sans-serif;
+}
+.tratmentSectionTwo li{
+    font-size: 22px;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .tallyWorkHeading{
+        font-size:30px;
+     }
+     .ageContainerText{
+        margin-left: -14%;
+        margin-bottom: 20%;
+        top:-40%;
+    }
+    .headerText{
+        font-size: 35px;
+    }
+    .largeText{
+        font-size: 17px;
+        font-weight: 400;
+    
+    }
+    /* section two */
+    tallyLargeText{
+        font-size: 20px;
+    }
+/* section five */
+.latestContent img{
+    width: 215px;
+    height: 215px;
+}
+.latestContent p{
+    font-size: 24px;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+ /* blogDetails page */
+/* section two */
+.tratmentSectionOne, .tratmentSectionTwo p{
+    font-size: 22px;
+    font-family: 'Roboto',sans-serif;
+}   
+
+.tratmentSectionTwo ul{
+    font-size: 22px;
+    font-family: 'Roboto',sans-serif;
+}
+.tratmentSectionTwo li{
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+}
+.childSection{
+    font-size: 22px;
+
+}
+}
+@media (max-width: 575.98px) { 
+    .tallyWorkHeading{
+        font-size:25px;
+     }
+     .tallyLargeText{
+         font-size: 20px;
+     }
+     .headerText{
+        font-size: 30px;
+    }.largeText{
+        font-size: 15px;
+        font-weight: 400;
+    
+    }
+    .finalContainer{
+        margin-bottom:7%;
+    }
+/* section five */
+.latestContent img{
+    width: 215px;
+    height: 215px;
+}
+.latestContent p{
+    font-size: 26px;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* blogDetails page */
+/* section one */
+.childSection{
+    font-size: 20px;
+
+}
+/* section two */
+.tratmentSectionOne, .tratmentSectionTwo p{
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.tratmentSectionTwo ul,li{
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+}
+.tratmentSectionTwo li{
+    font-size: 18px;
+    font-family: 'Roboto',sans-serif;
+}
+}   
