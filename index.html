@@ -1,76 +1,109 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href= 
+      "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
+
+        
+        <script src= 
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+            </script> 
+            <script src= 
+        "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+            </script> 
+            <script src= 
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+            </script> 
       </head>
 <body>
-<script type="text/javascript">
-  $(document).ready(function() {
- 
-    $("#owl-demo").owlCarousel({
-
-autoPlay: 3000, //Set AutoPlay to 3 seconds
-
-items : 3,
-itemsDesktop : [1199,3],
-itemsDesktopSmall : [979,3],
-navigation : true,
-nav: true,
-navigationText: ["<i class='fas fa-long-arrow-alt-right right-arrow-design'></i>", "<i class='fas fa-long-arrow-alt-left left-arrow-design'></i>"]
-});
-
-$("#category-owl-demo").owlCarousel({
-
-autoPlay: 3000, //Set AutoPlay to 3 seconds
-
-items : 3,
-itemsDesktop : [1199,3],
-itemsDesktopSmall : [979,3],
-navigation : true,
-navigationText: ["<i class='fa fas fa-long-arrow-alt-right right-arrow-design'></i>", "<i class='fa fas fa-long-arrow-alt-left left-arrow-design'></i>"]
-});
-
-});
-</script>
-
-<!-- header -->
 
 <div class="headerContainer">
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg " id="sidebar">
+      <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-toggle="collapse" 
+      data-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+      value="&times;">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        <span class="navbar-cross-icon py-1"><i class="fas fa-times"></i></span>
+      </button>
+
         <a class="navbar-brand" href="#"><span class="lowertext"><span class="italic">The </span>Tally</span> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+       
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="dropdown order-lg-1 sydney-visibility">
+          <button class="btn sydney-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+           sydney
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">sydney</a></li>
+            <li><a class="dropdown-item" href="#">Melbourne</a></li>
+          </ul>
+        </div>
+        <div class="hidden-header-icons">
+          <span><img class="user-icon" src='./images/user-icon.png' alt="pan" /></span>
+          <span><img src="./images/location-icon.png" alt="pan" /></span>
+        </div> 
+      <form class="order-lg-2 ml-lg-auto">
+        <div class="form-group m-0">  
+           <!-- <button class="btn circled" type="submit"><i class="fas fa-search"></i></button> -->
+           <img class="search-icon" src="./images/search-icon.png" alt="pan" />
+        </div>
+      </form>
+        <div class="collapse navbar-collapse  blue-header-dropdown" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Browse by age
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Melbourne</a>
-                <a class="dropdown-item" href="#">Perth</a>
+
+             <a class="nav-link dropdown-toggle dropdown-bold-category " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Browse by Age  
+                  <i class="fas fa-plus plus-icon dropdown-plus-icon"></i> 
+                  <i class="fas fa-minus dropdown-minus-icon"></i>
+                </a>
+
+              <div class="dropdown-menu light-blue-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Pregnancy </a>
+                <a class="dropdown-item" href="#">Newborns & Babies
+                </a>
+                <a class="dropdown-item" href="#">Toddlers and Pre-School Kids
+                </a>
+                <a class="dropdown-item" href="#">Primary School Kids
+                </a>
+                <a class="dropdown-item" href="#">Teenagers </a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Browse by category
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle dropdown-bold-category" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Browse by Category
+                <i class="fas fa-plus plus-icon dropdown-plus-icon"></i> 
+                <i class="fas fa-minus dropdown-minus-icon"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Melbourne</a>
-                <a class="dropdown-item" href="#">Perth</a>
+              <div class="dropdown-menu light-blue-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Pregnancy & birth
+                </a>
+                <a class="dropdown-item" href="#">Kids health
+                </a>  <a class="dropdown-item" href="#">Sleeping, feeding & settling
+
+                </a>  <a class="dropdown-item" href="#">Clothing & toiletries
+
+                </a>  <a class="dropdown-item" href="#">Activities & development
+
+                </a>  <a class="dropdown-item" href="#">Travel
+                </a>  <a class="dropdown-item" href="#">Parent's health and lifestyle
+                </a>
               </div>
-            </li><li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
+            </li>
+            
           </ul>
     
           <ul class="navbar-nav mr-auto">
@@ -80,35 +113,13 @@ navigationText: ["<i class='fa fas fa-long-arrow-alt-right right-arrow-design'><
             <li class="nav-item">
               <a class="nav-link" href="#">Register</a>
             </li>
-            <li class="nav-item dropdown">
-                <a style="border: 2px solid #26AEAC;border-radius :6px; padding:2%" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   sydney
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Melbourne</a>
-                  <a class="dropdown-item" href="#">Perth</a>
-                </div>
-              </li>
+          
           </ul>
-          <form>
-            <div class="form-group row">
-              <div class="col-sm-10">
-               <span class="circled"> <button class="btn " type="submit"><i class="fas fa-search"></i></button></span>
-          </form>
-
-              </div>
-            </div>
         </div>
-      </nav>
-
-</div>
-
+    </nav>
   </div>
-  <!-- <div class="container"> -->
-      
-
-<!-- section one -->
-<div  style="background-image:url('./images/background.png');background-size: cover;" class="searchContainer">
+         
+<div  style="background-image:url('./images/gradientBackground.png');" class="searchContainer">
         <div class="container">
         
         <div class="">
@@ -145,6 +156,7 @@ navigationText: ["<i class='fa fas fa-long-arrow-alt-right right-arrow-design'><
   </div>
   
 </div>
+
 <div class="categories">
   <!-- <HeadingCategories/> -->
   
@@ -256,24 +268,24 @@ PAEDIATRICIANS
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
   
-  </div>
+</div>
 <!-- section two -->
 <div class="workContainer">
 <div   class="container">
     <div class="row">
-      <div class=" col col-md-12" >
+      <div class="  col-md-12" >
       <h1 class="tallyWorkHeading">How does the tally work?</h1>
       <p class="tallyLargeText grey">Save yourself from the overwhelm of google search results, or the well meaning opinions of your small group of friends. Here you can access recommendations from literally tens of thousands of parents, that answer the most frequently asked parenting questions. </p>
       </div>
     </div>
     <div class=" row mt-5 mb-4">
-    <div class="col col-md-4 mb-4  col-sm-6">
-    <image class="mb-4" src="./images/workOne.png" alt="pan" /> <p class="tallyWorkText">Search for the specific recommendations</p>
+    <div class=" col-md-4 mb-4  col-sm-6">
+    <image class="mb-4" src="./images/workThree.png" alt="pan" /> <p class="tallyWorkText">Search for the specific recommendations</p>
     </div>
-    <div class="col col-md-4 col-sm-6"><image class="mb-4" src="./images/workTwo.png" alt="pan" />
+    <div class=" col-md-4 col-sm-6"><image class="mb-4" src="./images/workTwo.png" alt="pan" />
         <p class="tallyWorkText">Browse by your child’s age or your parenting stage</p></div>
-    <div class="col col-md-4 col-sm-6">
-      <image class="mb-4" src="./images/workThree.png" alt="pan" />
+    <div class=" col-md-4 col-sm-6">
+      <image class="mb-4" src="./images/workOne.png" alt="pan" />
       <p class="tallyWorkText">Browse by category of recommendation</p>
     </div>
     <div class="row">
@@ -299,9 +311,7 @@ PAEDIATRICIANS
          <div  class="ageContainerText">
         <h1  class="AgeUppercaseText">browse by age</h1>
     
-    <p  class="largeText">Lorem ipsum dolor sit amet, consetetur 
-sadipscing elitr, sed diam nonumy
-eirmod tempor invidunt ut</p>
+    <p  class="ageLargeText">Lorem ipsum dolor sit amet, consectetur sadipg elitr, sed diam nonumy eirmod  mpor inviduntally utipsum </p>
     
     </div> 
 </div> 
@@ -390,7 +400,7 @@ eirmod tempor invidunt ut</p>
     <div style="background-image: url('./images/categoryBackground.png');background-size: cover;" class="categoryContainer">
       <div    class="container">
         <div class="row">
-          <div class="col col-md-3">
+          <div class=" col-md-3">
             <div class="categoryHeadingContainer">
                <h1 class="categoryText">browse by category</h1>
                <p class="categoryLargeText">Lorem ipsum dolor sit amet,
@@ -398,7 +408,7 @@ eirmod tempor invidunt ut</p>
                 sed diam nonumy eirmod 
                 tempor invidunt ut</p></div>
             </div>
-      <div class="col col-md-9">
+      <div class=" col-md-9">
         <div class="postItem">
          <span>
             <div class="postContainer">
@@ -509,31 +519,31 @@ eirmod tempor invidunt ut</p>
 </div>
 </div>
 <div class="row">
-<div class="col col-lg-6 col-sm-6">
+<div class=" col-lg-6 col-sm-6">
 <div  class=" row mb-4">
 <div class="col"><img src="./images/articleOne.png" alt="pan" /></div>
-<div  class="col mt-5 mb-4"><p>Do you know how to manage your Eczema?</p></div>
+<div  class=" mt-5 mb-4"><p>Do you know how to manage your Eczema?</p></div>
 </div>
 </div>
-<div class="col col-lg-6 col-sm-6">
- <!-- {/* anything below the large wil go one column and anything above large will have 6 col */} -->
+<div class=" col-lg-6 col-sm-6">
+ <!-- {/* anything below the large wil go one column and anything above large will have 6  */} -->
 <div  class="row mb-4">
 <div class="col"><img src="./images/articleTwo.png" alt="pan" /></div>
-<div  class="col mt-5 mb-4"><p>Lorem Ipsum is simply dummy text of the printing & typesetting</p></div>
+<div  class=" mt-5 mb-4"><p>Lorem Ipsum is simply dummy text of the printing & typesetting</p></div>
 </div>
 </div>
 </div>
 <div  class="row mb-4">
-<div class="col col-lg-6 col-sm-6">
+<div class=" col-lg-6 col-sm-6">
 <div  class="row mb-4">
 <div class="col"><img src="./images/articleThree.png" alt="pan" /></div>
-<div  class=" col mt-5 mb-4"><p>Lorem Ipsum is simply dummy text of the printing & typesetting</p></div>
+<div  class="  mt-5 mb-4"><p>Lorem Ipsum is simply dummy text of the printing & typesetting</p></div>
 </div>
 </div>
 <div class="col-lg-6 col-sm-6">
 <div class="row mb-4">
 <div class="col"><img src="./images/articleFour.png" alt="pan" /></div>
-<div  class="col mt-5 mb-4"><p>Top Eczema Triggers to
+<div  class=" mt-5 mb-4"><p>Top Eczema Triggers to
 Avoid</p></div>
 </div>
 </div>
@@ -565,13 +575,13 @@ Avoid</p></div>
         <div class="finalContainer">
           <div class="container">
             <div class="row mb-4">
-              <div class="col col-md-4">
+              <div class=" col-md-4 col-sm-6">
               <div class="mt-5 mb-2 imageFinalContainer">
                 <img src="./images/finalOne.png" class="finalImageTwo" alt="pan"/>
                 <img class="finalImage" src="./images/kateNat.png" alt="pan"/>
               </div>
               </div>
-              <div class="col col-md-8 mt-5 mb-1">
+              <div class=" col-md-8 col-sm-6 mt-5 mb-1">
               <div class="finalText"><p class="largeText">We built The Tally because we needed it in our lives. As the mums of a collective tribe of three, we found ourselves constantly unsure as to what to do, where to go, or what to buy - and google only confused us further with its thousands of possible alternatives. We hope you find it as useful as we have as. Even more, we hope you’ll pay it forward by adding your own recommendations</p>
               <span class="largeText">In parenting solidarity,</span></div>
               <p class="finalSignature">Kate & Nat</p>
@@ -633,11 +643,14 @@ Avoid</p></div>
             <!-- </li> -->
           </ul>
           <div>
+            <hr/>
             <p class=" text-center mt-3 mb-5">Copyright © 2020 THE TALLY. All rights reserved.</p>
           </div>
       </div>
       <img src="images/footerOne.png" class=" footerImage" alt="pan"/>
+      
 </div>
 
+<script src="js/custom.js"></script>
 </body>
 </html>

@@ -1,22 +1,113 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
+    /* header */
+    .navbar-brand{
+        margin-right: auto;
+        font-size: 17px;
+    }
+    .hidden-header-icons{
+        visibility: visible;
+        margin: 0 14px;
+         display: flex;
+          align-items: center;
+    }
+    .search-icon{
+        width: 59%;
+    }
+    .sydney-visibility{
+        visibility: hidden;
+    }
+    .user-icon{
+        margin: 0 14px;
+
+    }
+    
+    .navbar-toggler-icon{
+        height: 1.25em;
+
+    }
+    .blue-header-dropdown{
+        background-color: #34AED5;
+     
+    }
+    .light-blue-menu a{
+        font-size: 15px;
+        padding: 10px 22px;
+
+    }
+    .light-blue-menu{
+        background-color: #3FB8DF;
+      
+    }
+    .headerContainer a{
+        text-transform:none;
+        color: white;
+        font-weight: 400;
+    }
+    .blue-header-dropdown ul{
+        font-weight: 600;
+    }
+    .plus-icon{
+        color: white;
+        display: inline-block;
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+    outline: 0;
+    }
+    .navbar-cross-icon{
+        margin: 4px 9px;
+
+    }
   /* homepage */
     /* section one */
     .topRankedButton{
-        margin-left:  -2%;
+        /* margin-left:  -2%; */
+    }
+    .right-arrow-design{
+        font-size: 42px;
+        margin-top: 2%;
+
+    }.left-arrow-design{
+        font-size: 42px;
+        margin-top: 2%;
+
     }
     .tallyWorkHeading{
+        width: 92%;
         font-size:35px;}
+
         /* sectionTwo */
 
-    tallyLargeText{
+    .tallyLargeText{
         font-size: 23px;
     }
+    .topRankedContainer{
+        margin: 32px auto;
+        width: 100%;
+
+    }
+    .readMoreText{
+        font-size: 20px;
+    font-weight: 500;
+    }
+    .top-ranked-search .form-control{
+        font-size: 22px;
+    }
+    .categories{
+        margin-top: 0
+    }
+    .searchContainer{
+        padding-bottom: 3%;
+
+    }
+
 /* section three */
 
 .ageImage{
     height: 850px;
     width: 850px;
-    margin-left: -50%;
+    right: 19%;
+
 }
 .ageContainer{
     position: relative;
@@ -26,9 +117,12 @@
     margin-left: -14%;
     margin-bottom: 20%;
     top:-40%;
+    width: 100%;
 }
 .headerText{
     font-size: 40px;
+    font-weight: 400;
+
 }
 
 .ageContainerText{
@@ -37,11 +131,11 @@
     top: 3%;
 }
 .ageImagePolygon{
-    right: -1%;
+    right: -10%;
 }
-.largeText{
+.ageLargeText{
     font-size: 22px;
-    padding: 0 10%
+    padding: 0 7%;
 }
 .ageSlider{
     margin-bottom: 15%;
@@ -56,6 +150,7 @@
 .AgeUppercaseText{
     margin-top: 11%;
     margin-left: 7%;
+    width: 100%;
 }
 /* section four */
 .categoryText{
@@ -122,7 +217,35 @@
 /* section one */
 .childSection{
     font-size: 24px;
-
+    margin-top: -31%;
+}
+.blog-body-text p{
+    display: none;
+}
+.blog-heading-text{
+    float: left;
+    font-weight: 400;
+}
+.blog-dropdown-style{
+    display: block;
+    width: 100% !important;
+    background-color: #34AED5;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.blog-filter-by{
+    position: absolute;
+    /* float: right; */
+    right: 0px;
+}
+.filter-body-text{
+    position: absolute;
+    display: block;
+    top: 100%;
+    width: 100% !important;
+    text-align: left;
+    left: 0;
 }
 /* section two */
 .tratmentSectionOne, .tratmentSectionTwo p{
@@ -138,8 +261,25 @@
     font-size: 22px;
     font-family: 'Roboto',sans-serif;
 }
-
-
+.blog-icons{
+    margin-top: 5%;
+    margin-left: -30%;
+    float: left;
+    left: 0;
+    margin-bottom: 16%;
+    position: relative;
+    width: 100%;
+}
+.bodyContainer{
+    margin-top: -12%;
+    border: 0 transparent;
+    width: 100%;
+    padding: 0;
+}
+.bodyContainer h1{
+    font-size: 36px;
+}
+/* .chil */
 }
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .tallyWorkHeading{
@@ -201,11 +341,26 @@
          font-size: 20px;
      }
      .headerText{
-        font-size: 30px;
+        font-size: 48px;
+        font-weight: 400;               
     }.largeText{
         font-size: 15px;
         font-weight: 400;
     
+    }
+    .headingContainer{
+        padding: 13% 0;
+    }
+    .topRankedHeading{
+
+    }
+    .ageImage{
+        right: 21%
+    }
+    .AgeUppercaseText{
+        font-size: 60px;
+        width: 69%;
+
     }
     .finalContainer{
         margin-bottom:7%;
@@ -243,3 +398,20 @@
     font-family: 'Roboto',sans-serif;
 }
 }   
+
+
+@media screen and (max-width: 991px){
+    .navbar-collapse{
+        left: -270px;
+        top: 66px;
+        width: 260px;
+        z-index: 999;
+        overflow: auto;
+        position: fixed;
+        height: 100% !important;
+        transition: all 0.2s ease;
+    }
+    .navbar-collapse.show{
+        left: 0;
+    }
+}

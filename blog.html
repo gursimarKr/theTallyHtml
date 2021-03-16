@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href= 
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+            <script src= 
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+            </script> 
+            <script src= 
+        "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
+            </script> 
+            <script src= 
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
+            </script> 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,6 +20,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
+        <script>
+          $(document).ready(function(){
+            $("#age-hide").click(function(){
+              console.log("hide");
+              $(".filter-body-text").toggle();
+            });
+           
+          });
+          </script>
       </head>
       <body>
 
@@ -84,33 +104,74 @@
          <h2 class="blog-heading-text text-center">Our Blog</h2>
        <div class="blog-body-text">
          <p class=""> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <span style="font-weight: 400;"> Filter by 
-           <span class="ml-4 mt-2">
-          <div class=" blog-dropdown-style dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Age
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Action</button>
-              <button class="dropdown-item" type="button">Another action</button>
-              <button class="dropdown-item" type="button">Something else here</button>
-            </div>
-          </div>
-                  </span>
-                  <span class="ml-4 mt-2">
-                    <div class="  blog-dropdown-style dropdown">
-                      <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Category
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item" type="button">Action</button>
-                        <button class="dropdown-item" type="button">Another action</button>
-                        <button class="dropdown-item" type="button">Something else here</button>
-                      </div>
-                    </div>
-                  </span>
-                </span>
+        <span class="blog-filter-by" id="age-hide"> Filter by</span>
+           <div class="filter-body-text">
+            <span class="">
+              <a class="nav-link dropdown-toggle blog-dropdown-style" 
+              href="#" id="navbarDropdown" 
+              role="button" data-toggle="dropdown" 
+              aria-haspopup="true"
+              aria-expanded="false"> 
+            Age
+           </a> 
+           
+              <!--dropdown sub items of menu-->
+              <div class="dropdown-menu mt-0 
+              shadow border-outline-success  "  
+       aria-labelledby="navbarDropdown"> 
+      <a class="dropdown-item" href="#">Pregnancy </a> 
+      <a class="dropdown-item" href="#"> 
+        Newborns & Babies
+      </a> 
+        <a class="dropdown-item" href="#"> 
+          Toddlers and Pre-School Kids
+        </a> 
+        <a class="dropdown-item" href="#"> 
+          Primary School Kids
+        </a> 
+        <a class="dropdown-item" href="#"> 
+          Teenagers
+        </a> 
+      </div> 
+            </span>
+             <span class="">
+              <a class="nav-link dropdown-toggle blog-dropdown-style" 
+              href="#" id="navbarDropdown" 
+              role="button" data-toggle="dropdown" 
+              aria-haspopup="true"
+              aria-expanded="false"> 
+            Category
+           </a> 
+           
+              <!--dropdown sub items of menu-->
+              <div class="dropdown-menu mt-0   
+              shadow border-outline-success "  
+       aria-labelledby="navbarDropdown"> 
+      <a class="dropdown-item" href="#">Pregnancy & bIrth
+      </a> 
+      <a class="dropdown-item" href="#"> 
+        Kids health
+      </a> 
+      <a class="dropdown-item" href="#"> 
+        Sleeping, feeding & settling
+      </a> 
+        <a class="dropdown-item" href="#"> 
+          Clothing & toiletries
+        </a> 
+        <a class="dropdown-item" href="#"> 
+          Activities & development
+        </a> 
+        <a class="dropdown-item" href="#"> 
+          Travel      </a> 
+          <a class="dropdown-item" href="#"> 
+            Parent's health and lifestyle      </a> 
+      </div> 
+            </span>
                   </div>
+                  </div>
+              
+           
+           
       </div> 
     </div>
   </div>
@@ -133,7 +194,7 @@
       </div>
       <div class=" col-md-6 cols-12 p-5 text-left">
           <div class="eczema">
-          <a href="/BlogDetails"><h5>Eczema in Children: 5 Treatments for Babies with Eczema</h5></a>
+          <a href="./blogDetails.html"><h5>Eczema in Children: 5 Treatments for Babies with Eczema</h5></a>
           <p>Are you worried your little one has eczema? While baby skin is known for being soft, silky, and smooth, infant eczema....</p>
           <p class="pt-5">22 January, 2021</p>
           </div>
