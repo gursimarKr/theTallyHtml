@@ -28,4 +28,29 @@ $(document).ready(function(){
     $('.dropdown-bold-category').click(function(){
         $(this).toggleClass('dropdown-toggler');
     })
+    $('.user-icon').click(function(){
+        $(".toggle-user-container").show();
+        $(".blue-user-icon").show();
+        $(".user-icon").hide();
+    
+        // $(this).toggleClass('userIconBackground');
+    })
+    $(".blue-user-icon").click(
+        function(){
+            $(".user-icon").show();
+            $(".blue-user-icon").hide();
+            $(".toggle-user-container").hide();
+        }
+    )
+    $(".location-icon").click(function(){
+        $(".toggle-location-container").show();
+        $(".blue-location-icon").show();
+        $(".location-icon").hide();
+    })
+    $(".blue-location-icon").click(function(){
+        $(".toggle-location-container").hide();
+        $(".blue-location-icon").hide();
+        $(".location-icon").show();
+    })
+  
 });

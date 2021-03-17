@@ -32,69 +32,131 @@
       </head>
       <body>
 
-        
+ 
 <div class="headerContainer">
-  <nav class="navbar navbar-expand-lg ">
-      <a class="navbar-brand" href="#"><span class="lowertext"><span class="italic">The </span>Tally</span> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-lg " id="sidebar">
+    <button 
+    class="navbar-toggler" 
+    type="button" 
+    data-toggle="collapse" 
+    data-target="#navbarSupportedContent" 
+    aria-controls="navbarSupportedContent" 
+    aria-expanded="false" 
+    aria-label="Toggle navigation"
+    value="&times;">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+      <span class="navbar-cross-icon py-1"><i class="fas fa-times"></i></span>
+    </button>
+
+      <a class="navbar-brand" href="./index.html"><span class="lowertext"><span class="italic">The </span>Tally</span> </a>
+     
     
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="dropdown order-lg-1 sydney-visibility">
+        <button class="btn sydney-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+         sydney
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">sydney</a></li>
+          <li><a class="dropdown-item" href="#">Melbourne</a></li>
+        </ul>
+      </div>
+      <div class="hidden-header-icons">
+        <span><a href="#" id="user-icon-image">
+          <img class="user-icon" src='./images/user-icon.png' alt="pan" />
+          <img class="blue-user-icon" src="./images/blue-user-icon.png" alt="pan"/>
+        </a></span>
+        <div class="toggle-user-container">
+          <button class="btn login-button">Login</button>
+          <button class="btn register-button">Register</button>
+        </div>
+        <span>
+          <img class ="location-icon" src="./images/location-icon.png" alt="pan" />
+          <img class="blue-location-icon" src="./images/blue-location-icon.png" alt="pan" />
+          <div class="toggle-location-container">
+            <div class="dropdown">
+              <button class="btn  location-button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sydney
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Melbourne</a>
+                <a class="dropdown-item" href="#"> Perth</a>
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </div>
+            
+          </div>
+        </span>
+      </div> 
+    <form class="order-lg-2 ml-lg-auto">
+      <div class="form-group m-0">  
+         <!-- <button class="btn circled" type="submit"><i class="fas fa-search"></i></button> -->
+         <img class="search-icon" src="./images/search-icon.png" alt="pan" />
+      </div>
+    </form>
+      <div class="collapse navbar-collapse  blue-header-dropdown" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Browse by age
+
+           <a class="nav-link dropdown-toggle dropdown-bold-category " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Browse by Age  
+                <i class="fas fa-plus plus-icon dropdown-plus-icon"></i> 
+                <i class="fas fa-minus dropdown-minus-icon"></i>
+              </a>
+
+            <div class="dropdown-menu light-blue-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Pregnancy </a>
+              <a class="dropdown-item" href="#">Newborns & Babies
+              </a>
+              <a class="dropdown-item" href="#">Toddlers and Pre-School Kids
+              </a>
+              <a class="dropdown-item" href="#">Primary School Kids
+              </a>
+              <a class="dropdown-item" href="#">Teenagers </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle dropdown-bold-category" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Browse by Category
+              <i class="fas fa-plus plus-icon dropdown-plus-icon"></i> 
+              <i class="fas fa-minus dropdown-minus-icon"></i>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Melbourne</a>
-              <a class="dropdown-item" href="#">Perth</a>
+            <div class="dropdown-menu light-blue-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Pregnancy & birth
+              </a>
+              <a class="dropdown-item" href="#">Kids health
+              </a>  <a class="dropdown-item" href="#">Sleeping, feeding & settling
+
+              </a>  <a class="dropdown-item" href="#">Clothing & toiletries
+
+              </a>  <a class="dropdown-item" href="#">Activities & development
+
+              </a>  <a class="dropdown-item" href="#">Travel
+              </a>  <a class="dropdown-item" href="#">Parent's health and lifestyle
+              </a>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Browse by category
+            <a class="nav-link " href="./blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Blog
+              
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Melbourne</a>
-              <a class="dropdown-item" href="#">Perth</a>
-            </div>
-          </li><li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
             </li>
+
         </ul>
   
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item account-visibility active">
             <a class="nav-link" href="#">Login</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item account-visibility">
             <a class="nav-link" href="#">Register</a>
           </li>
-          <li class="nav-item dropdown">
-              <a style="border: 2px solid #26AEAC;border-radius :6px; padding:2%" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 sydney
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Melbourne</a>
-                <a class="dropdown-item" href="#">Perth</a>
-              </div>
-            </li>
+        
         </ul>
-        <form>
-          <div class="form-group row">
-            <div class="col-sm-10">
-             <span class="circled"> <button class="btn " type="submit"><i class="fas fa-search"></i></button></span>
-        </form>
-
-            </div>
-          </div>
       </div>
-    </nav>
-
+  </nav>
 </div>
 
-</div>
 <!-- blog section one -->
 <div style="background-image: url('./images/blogBackground.png');">
 <div class="container">
@@ -104,21 +166,29 @@
          <h2 class="blog-heading-text text-center">Our Blog</h2>
        <div class="blog-body-text">
          <p class=""> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <span class="blog-filter-by" id="age-hide"> Filter by</span>
+        <span class="blog-filter-by" id="age-hide"> Filter by
+          <span><img class="filter-by-arrows" src="./images/filter-by.png" alt="pan"/></span>
+        </span>
+          <div class="accordion">
            <div class="filter-body-text">
             <span class="">
-              <a class="nav-link dropdown-toggle blog-dropdown-style" 
-              href="#" id="navbarDropdown" 
-              role="button" data-toggle="dropdown" 
-              aria-haspopup="true"
-              aria-expanded="false"> 
-            Age
+              <a class="dropdown-toggle blog-dropdown-style" 
+              href="#" id="" 
+              role="button"
+              data-toggle="collapse" 
+              data-target="#collapseOne" 
+              aria-expanded="true"
+              aria-controls="collapseOne"
+              >
+            Age 
+            <i class="fas fa-plus plus-icon dropdown-plus-icon"></i> 
+            <i class="fas fa-minus dropdown-minus-icon"></i>
            </a> 
            
               <!--dropdown sub items of menu-->
-              <div class="dropdown-menu mt-0 
-              shadow border-outline-success  "  
-       aria-labelledby="navbarDropdown"> 
+              <div id="collapseOne" class="dropdown-menu mt-0 
+              shadow border-outline-success collapse  show"  
+       aria-labelledby="filter-body-text" data-parent="#accordion"> 
       <a class="dropdown-item" href="#">Pregnancy </a> 
       <a class="dropdown-item" href="#"> 
         Newborns & Babies
@@ -135,19 +205,24 @@
       </div> 
             </span>
              <span class="">
-              <a class="nav-link dropdown-toggle blog-dropdown-style" 
+              <a class="nav-link dropdown-toggle blog-dropdown-style collapsed" 
               href="#" id="navbarDropdown" 
-              role="button" data-toggle="dropdown" 
-              aria-haspopup="true"
-              aria-expanded="false"> 
+              role="button" 
+              data-toggle="collapse" 
+              data-target="#collapseTwo" 
+              aria-expanded="true"
+              aria-controls="collapseTwo"
+              > 
             Category
+            <i class="fas fa-plus plus-icon dropdown-plus-icon"></i> 
+            <i class="fas fa-minus dropdown-minus-icon"></i>
            </a> 
            
               <!--dropdown sub items of menu-->
-              <div class="dropdown-menu mt-0   
-              shadow border-outline-success "  
+              <div id="collapseTwo" class="dropdown-menu mt-0   
+              shadow border-outline-success collapse"  
        aria-labelledby="navbarDropdown"> 
-      <a class="dropdown-item" href="#">Pregnancy & bIrth
+      <a class="dropdown-item" href="#">Pregnancy & birth
       </a> 
       <a class="dropdown-item" href="#"> 
         Kids health
@@ -168,7 +243,8 @@
       </div> 
             </span>
                   </div>
-                  </div>
+          </div>
+        </div>
               
            
            

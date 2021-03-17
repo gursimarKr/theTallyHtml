@@ -1,14 +1,28 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
     /* header */
+    .blue-user-icon{
+        display: none;
+        margin: 0 14px;
+    }
     .navbar-brand{
         margin-right: auto;
         font-size: 17px;
+    }
+    .lowertext{
+        color: #000;
+        font-weight: 600;
+        margin-left: 39px;
+
+    }
+    .account-visibility{
+        visibility: hidden;
     }
     .hidden-header-icons{
         visibility: visible;
         margin: 0 14px;
          display: flex;
           align-items: center;
+          z-index: 999;
     }
     .search-icon{
         width: 59%;
@@ -20,15 +34,27 @@
         margin: 0 14px;
 
     }
-    
+    .user-icon-image{
+        position: absolute;
+        display: block;
+        top: 100%;
+        width: 100% !important;
+        text-align: left;
+        left: 0;
+    }
+    .navbar-brand{
+        color: black;
+    }
     .navbar-toggler-icon{
         height: 1.25em;
 
     }
     .blue-header-dropdown{
         background-color: #34AED5;
-     
+        /* padding: 2px */
+
     }
+
     .light-blue-menu a{
         font-size: 15px;
         padding: 10px 22px;
@@ -36,7 +62,8 @@
     }
     .light-blue-menu{
         background-color: #3FB8DF;
-      
+        border-color: white transparent transparent transparent;
+        border-width: 2px;
     }
     .headerContainer a{
         text-transform:none;
@@ -49,15 +76,80 @@
     .plus-icon{
         color: white;
         display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 3px 6px 0 0;
+        margin-right: 12px;
+        font-size: 24px;
+    }
+    .dropdown-minus-icon{
+        position: absolute;
+        margin-right: 12px;
+        right: 0;
+        font-size: 24px;
+        padding: 3px 6px 0 0;
     }
     .navbar-toggler:focus,
     .navbar-toggler:active {
     outline: 0;
     }
-    .navbar-cross-icon{
-        margin: 4px 9px;
+    .navbar-toggler{
+        position: absolute;
+    top: 16px;
+    left: -12px;
+    }
+    .toggle-user-container{
+        background-color:#34AED5 ;
+        position: absolute;
+    display: none;
+    top: 100%;
+    width: 100% !important;
+    text-align: center;
+    left: 0;
+    }
+    .toggle-location-container{
+        background-color: #34AED5;
+        position: absolute;
+        display: none;
+        top: 100%;
+        width: 100% !important;
+        text-align: center;
+        left: 0;
+        /* z-index: 999; */
+    }
+    .userIconBackground{
+        background-color:#34AED5 ;
+    }
+    .login-button, .register-button{
+        background-color: white;
+        color: #34AED5;
+        font-size: 17px;
+        font-weight: 600;
+        margin: 4px 5px;
+        padding: 5px 36px;
+        margin: 13px 9px;
 
     }
+    .toggle-location-container .dropdown .btn{
+        background-color:white;
+        color:#34AED5;
+        font-size:  17px;
+        font-weight: 600;
+        margin: 15px 12px;
+        padding: 5px 36px;
+    }
+    .toggle-location-container .dropdown .dropdown-menu .dropdown-item{
+        color:#34AED5 ;
+        align-items: center;
+    }
+
+    .navbar-cross-icon{
+        /* margin: 4px 9px; */
+        background-color: #E4E4E4;
+        color: #BCBCBC;
+        padding: 5px 12px;
+    }
+
   /* homepage */
     /* section one */
     .topRankedButton{
@@ -224,28 +316,41 @@
 }
 .blog-heading-text{
     float: left;
+    font-size: 29px;
     font-weight: 400;
+    margin: 24px 6px;
 }
 .blog-dropdown-style{
-    display: block;
     width: 100% !important;
     background-color: #34AED5;
+    color:white;
+   
 }
 .dropdown-toggle::after{
     display: none;
+}
+.blogHeading{
+    padding: 0;
 }
 .blog-filter-by{
     position: absolute;
     /* float: right; */
     right: 0px;
+    padding: 2px 24px;
+
+    text-transform: none;
 }
 .filter-body-text{
     position: absolute;
-    display: block;
+    /* display: block; */
     top: 100%;
     width: 100% !important;
     text-align: left;
     left: 0;
+    z-index: 999;  display: hidden;
+}
+.filter-by-arrows{
+
 }
 /* section two */
 .tratmentSectionOne, .tratmentSectionTwo p{
@@ -281,7 +386,7 @@
 }
 /* .chil */
 }
-@media (min-width: 576px) and (max-width: 767.98px) { 
+@media (min-width: 576px) and (max-width: 767.98px) {
     .tallyWorkHeading{
         font-size:30px;
      }
@@ -296,7 +401,7 @@
     .largeText{
         font-size: 17px;
         font-weight: 400;
-    
+
     }
     /* section two */
     tallyLargeText{
@@ -318,7 +423,7 @@
 .tratmentSectionOne, .tratmentSectionTwo p{
     font-size: 22px;
     font-family: 'Roboto',sans-serif;
-}   
+}
 
 .tratmentSectionTwo ul{
     font-size: 22px;
@@ -333,7 +438,7 @@
 
 }
 }
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     .tallyWorkHeading{
         font-size:25px;
      }
@@ -342,11 +447,11 @@
      }
      .headerText{
         font-size: 48px;
-        font-weight: 400;               
+        font-weight: 400;
     }.largeText{
         font-size: 15px;
         font-weight: 400;
-    
+
     }
     .headingContainer{
         padding: 13% 0;
@@ -397,7 +502,7 @@
     font-size: 18px;
     font-family: 'Roboto',sans-serif;
 }
-}   
+}
 
 
 @media screen and (max-width: 991px){

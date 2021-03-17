@@ -39,7 +39,7 @@
         <span class="navbar-cross-icon py-1"><i class="fas fa-times"></i></span>
       </button>
 
-        <a class="navbar-brand" href="#"><span class="lowertext"><span class="italic">The </span>Tally</span> </a>
+        <a class="navbar-brand" href="./index.html"><span class="lowertext"><span class="italic">The </span>Tally</span> </a>
        
       
         <div class="dropdown order-lg-1 sydney-visibility">
@@ -52,8 +52,31 @@
           </ul>
         </div>
         <div class="hidden-header-icons">
-          <span><img class="user-icon" src='./images/user-icon.png' alt="pan" /></span>
-          <span><img src="./images/location-icon.png" alt="pan" /></span>
+          <span><a href="#" id="user-icon-image">
+            <img class="user-icon" src='./images/user-icon.png' alt="pan" />
+            <img class="blue-user-icon" src="./images/blue-user-icon.png" alt="pan"/>
+          </a></span>
+          <div class="toggle-user-container">
+            <button class="btn login-button">Login</button>
+            <button class="btn register-button">Register</button>
+          </div>
+          <span>
+            <img class ="location-icon" src="./images/location-icon.png" alt="pan" />
+            <img class="blue-location-icon" src="./images/blue-location-icon.png" alt="pan" />
+            <div class="toggle-location-container">
+              <div class="dropdown">
+                <button class="btn  location-button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sydney
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Melbourne</a>
+                  <a class="dropdown-item" href="#"> Perth</a>
+                  <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+              </div>
+              
+            </div>
+          </span>
         </div> 
       <form class="order-lg-2 ml-lg-auto">
         <div class="form-group m-0">  
@@ -65,12 +88,17 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
 
-             <a class="nav-link dropdown-toggle dropdown-bold-category " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <a 
+             class="nav-link dropdown-toggle dropdown-bold-category " 
+             href="#" 
+             id="navbarDropdown" 
+             role="button" 
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Browse by Age  
                   <i class="fas fa-plus plus-icon dropdown-plus-icon"></i> 
                   <i class="fas fa-minus dropdown-minus-icon"></i>
                 </a>
-
+                
               <div class="dropdown-menu light-blue-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Pregnancy </a>
                 <a class="dropdown-item" href="#">Newborns & Babies
@@ -103,14 +131,20 @@
                 </a>
               </div>
             </li>
-            
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="./blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Blog
+                
+              </a>
+              </li>
+
           </ul>
     
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item account-visibility active">
               <a class="nav-link" href="#">Login</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item account-visibility">
               <a class="nav-link" href="#">Register</a>
             </li>
           
@@ -137,6 +171,7 @@
                       <!-- <label class="topRankedText" for="inputEmail4">What</label> -->
                     </div>    
                     </div>
+                    <form>
                     <div class="form-row">
                     <div class="form-group  top-ranked-search col-md-10">
                         <input  type="text" class="form-control" id="inputEmail4" placeholder="show me the top ranked..."/>
@@ -145,6 +180,8 @@
                         <button class="btn topRankedButton" type="submit"><i class="fas fa-search"></i></button>
                     </div>
                     </div>
+                    </form>
+                    
                   <!-- </div> -->
               </form>
           </div>
@@ -519,17 +556,17 @@ PAEDIATRICIANS
 </div>
 </div>
 <div class="row">
-<div class=" col-lg-6 col-sm-6">
-<div  class=" row mb-4">
+<div class="col-lg-6 col-sm-6">
+<div  class="row mb-4">
 <div class="col"><img src="./images/articleOne.png" alt="pan" /></div>
-<div  class=" mt-5 mb-4"><p>Do you know how to manage your Eczema?</p></div>
+<div  class="col mt-5 mb-4"><p>Do you know how to manage your Eczema?</p></div>
 </div>
 </div>
 <div class=" col-lg-6 col-sm-6">
  <!-- {/* anything below the large wil go one column and anything above large will have 6  */} -->
 <div  class="row mb-4">
 <div class="col"><img src="./images/articleTwo.png" alt="pan" /></div>
-<div  class=" mt-5 mb-4"><p>Lorem Ipsum is simply dummy text of the printing & typesetting</p></div>
+<div  class="col mt-5 mb-4"><p>Lorem Ipsum is simply dummy text of the printing & typesetting</p></div>
 </div>
 </div>
 </div>
@@ -537,13 +574,13 @@ PAEDIATRICIANS
 <div class=" col-lg-6 col-sm-6">
 <div  class="row mb-4">
 <div class="col"><img src="./images/articleThree.png" alt="pan" /></div>
-<div  class="  mt-5 mb-4"><p>Lorem Ipsum is simply dummy text of the printing & typesetting</p></div>
+<div  class="col  mt-5 mb-4"><p>Lorem Ipsum is simply dummy text of the printing & typesetting</p></div>
 </div>
 </div>
 <div class="col-lg-6 col-sm-6">
 <div class="row mb-4">
 <div class="col"><img src="./images/articleFour.png" alt="pan" /></div>
-<div  class=" mt-5 mb-4"><p>Top Eczema Triggers to
+<div  class="col mt-5 mb-4"><p>Top Eczema Triggers to
 Avoid</p></div>
 </div>
 </div>
@@ -594,10 +631,11 @@ Avoid</p></div>
 <div class="footerContainer">
   
     <div class="container">
+      <!-- .row>.col-md-4+.col- -->
         <ul class="list-group list-group-horizontal">
             <li class="list-group-item border-0">
                 <h3><span class="italicFooter">The</span>Tally</h3>
-                <span class="headingText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</span>
+                <span class="headingText footer-first-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</span>
                 <div class="icons">
                   <span class="blueIcon"><i class="fab fa-facebook-f"></i></span>
                   <span class="blueIcon"><i class="fab fa-instagram"></i></span>
@@ -608,19 +646,19 @@ Avoid</p></div>
             <li class="list-group-item border-0">
                 <h4>Extras</h4>
                 <ul class="listUnstyled">
-                <li>Terms & Conditions</li>
-                <li>Privacy Policy</li>
-                <li>FAQ</li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a> </li>
+                <li><a href="#">FAQ</a></li>
                 </ul>
             </li>
              <li class="list-group-item border-0">
                 <h4>Pages</h4>
                 <ul class="listUnstyled">
-                <li>About Us</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
-                <li>Login</li>
-                <li>Register</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
                 </ul>
             </li>
             <li class="list-group-item border-0">
@@ -636,7 +674,6 @@ Avoid</p></div>
                             <span class="footerWorkIcon"><i class="fas fa-angle-right"></i></span></button>
                         </div>
                       </div>
-                       
                       </form>
                 </div>
             </li>

@@ -1,3 +1,8 @@
+.container{
+    max-width: 1170px;
+    width: 100%;
+}
+
 /* header */
 .headerContainer a{
     color: black;
@@ -22,7 +27,7 @@
 
 }
 .dropdown .order-lg-1{
-    margin-right: 54px;
+    margin-right: 34px;
 }
 .form-menu-items{
     display: inline-flex;
@@ -96,6 +101,13 @@
     /* background-color: #fafafa; */
     overflow: hidden;
 }
+.email-input .form-control:focus,.email-input .form-control:focus{
+    outline: 0;
+}
+.footerContainer a{
+    text-decoration: none;
+    color: black;
+}
 .footerContainer li{
     font-size: 20px;
 }
@@ -104,12 +116,15 @@
 }
 .footerWorkIcon{
     margin-left: -61px;
-    background-color:#f0c195 ;
+    background:linear-gradient(to right, #FA937E 0%, #FCB34E 100%); ;
     color: white;
-    padding: 1px 7px;
+    padding: 2px 8px;
     border-radius: 25px ;
     margin-top: 9%;
     /* box-shadow:1px 4px 11px #888888; */
+}
+.footer-first-item{
+    /* width: 35%; */
 }
 .email-input{
     width: 100%;
@@ -1102,13 +1117,20 @@ text-transform: uppercase;
 .navbar-toggler.toggler .navbar-cross-icon{
    display: block;    
 }
-
+.dropdown-plus-icon{
+    display: none;
+}.dropdown-minus-icon{
+    display: none;
+}
+.blue-location-icon{
+    display: none;
+}
 .dropdown-bold-category .dropdown-minus-icon{
     display: none;
   }
 .dropdown-bold-category.dropdown-toggler .dropdown-plus-icon{
   display: none;
 }
-.dropdown-bold-category .dropdown-toggler .dropdown-minus-icon{
-   display: block;    
+.dropdown-bold-category.dropdown-toggler .dropdown-minus-icon{
+   display: inline;    
 }
