@@ -115,13 +115,16 @@
     font-size: 40px;
 }
 .footerWorkIcon{
-    margin-left: -61px;
+    /* margin-left: -61px; */
     background:linear-gradient(to right, #FA937E 0%, #FCB34E 100%); ;
     color: white;
     padding: 2px 8px;
     border-radius: 25px ;
-    margin-top: 9%;
+    /* margin-top: 9%; */
     /* box-shadow:1px 4px 11px #888888; */
+}
+.input-group-append .btn{
+    position: absolute;
 }
 .footer-first-item{
     /* width: 35%; */
