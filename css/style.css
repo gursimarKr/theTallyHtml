@@ -42,7 +42,7 @@
 }
 .filter-body-text{
     color: white;
-    display: inline-block;
+    display: none;
 }
 .text{
     font-size: 40px;
@@ -126,6 +126,11 @@
 .footer-first-item{
     /* width: 35%; */
 }
+.footer-button-left{
+    position: absolute;
+    z-index: 2;
+    margin-left: -19%;
+}
 .email-input{
     width: 100%;
 }
@@ -146,10 +151,10 @@
 }
 .footerImage{
     right: -5%;
-    width: 151px;
-    height: 151px;
+    width: 109px;
+    height: 112px;
     position: absolute;
-    margin-top: -25%;
+    margin-top: -23%;
 }
 
 .listUnstyled{
@@ -171,6 +176,9 @@
     border-radius: 30px;
     padding: 8px 15px;
     font-size: 19px;
+}
+.blueIcon a{
+    color: white;
 }
 .icons{
     margin-top: 19px;
@@ -576,7 +584,7 @@
 }
 .finalImageTwo{
     position: absolute;
-    margin-top: 58%;
+    margin-top: 51%;
     width: 127px !important;
     height: 130px !important;
     margin-left: 53%;
