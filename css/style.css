@@ -418,6 +418,14 @@
     border-radius: 20px;
     position: relative;
 }
+.category-postContainer{
+    margin-top: 13%;
+    background-color: white;
+    width: 225px;
+    height: 250px;
+    border-radius: 20px;
+    position: relative;
+}
 .postBody{
     position: absolute;
     margin-top: 50%;
