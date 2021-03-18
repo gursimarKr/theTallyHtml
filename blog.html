@@ -56,7 +56,7 @@
      
     
       <div class="dropdown order-lg-1 sydney-visibility">
-        <button class="btn sydney-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn sydney-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
          sydney
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -94,7 +94,7 @@
     <form class="order-lg-2 ml-lg-auto">
       <div class="form-group m-0">  
          <!-- <button class="btn circled" type="submit"><i class="fas fa-search"></i></button> -->
-         <img class="search-icon" src="./images/search-icon.png" alt="pan" />
+         <a href="#search-question"><img class="search-icon" src="./images/search-icon.png" alt="pan" /></a>
       </div>
     </form>
       <div class="collapse navbar-collapse  blue-header-dropdown" id="navbarSupportedContent">
@@ -113,14 +113,23 @@
               </a>
 
             <div class="dropdown-menu light-blue-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Pregnancy </a>
-              <a class="dropdown-item" href="#">Newborns & Babies
-              </a>
-              <a class="dropdown-item" href="#">Toddlers and Pre-School Kids
-              </a>
-              <a class="dropdown-item" href="#">Primary School Kids
-              </a>
-              <a class="dropdown-item" href="#">Teenagers </a>
+             <ul>
+               <li>
+                <a class="dropdown-item" href="#">Pregnancy </a>
+               </li>
+               <li>
+                <a class="dropdown-item" href="#">Newborns & Babies</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Toddlers and Pre-School Kids</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Primary School Kids</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Teenagers </a>
+               </li>
+             </ul>
             </div>
           </li>
           <li class="nav-item dropdown ">
@@ -130,22 +139,34 @@
               <i class="fas fa-minus dropdown-minus-icon"></i>
             </a>
             <div class="dropdown-menu light-blue-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Pregnancy & birth
-              </a>
-              <a class="dropdown-item" href="#">Kids health
-              </a>  <a class="dropdown-item" href="#">Sleeping, feeding & settling
-
-              </a>  <a class="dropdown-item" href="#">Clothing & toiletries
-
-              </a>  <a class="dropdown-item" href="#">Activities & development
-
-              </a>  <a class="dropdown-item" href="#">Travel
-              </a>  <a class="dropdown-item" href="#">Parent's health and lifestyle
-              </a>
+        <ul>
+          <li>
+            <a class="dropdown-item" href="#">Pregnancy & birth
+            </a>
+           </li>
+            <a class="dropdown-item" href="#">Kids health
+            </a> 
+            <li>
+            <a class="dropdown-item" href="#">Sleeping, feeding & settling
+            </a>  
+          </li>
+          <li>  <a class="dropdown-item" href="#">Clothing & toiletries
+          </a> 
+        </li>
+          <li>
+            <a class="dropdown-item" href="#">Activities & development</a> 
+          </li>
+           <li>
+            <a class="dropdown-item" href="#">Travel</a> 
+           </li> 
+            <li>
+              <a class="dropdown-item" href="#">Parent's health and lifestyle</a>
+            </li>
+        </ul>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link " href="./blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link " href="./blog-details.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Blog
               
             </a>
@@ -165,7 +186,9 @@
       </div>
   </nav>
 </div>
-       <!-- ------ --><!-- blog section one -->
+       <!-- ------ -->
+
+        <!-- blog section one -->
 <div style="background-image: url('./images/blogBackground.png');">
 <div class="container">
   <div class=" row text-center">
@@ -174,9 +197,52 @@
          <h2 class="blog-heading-text text-center">Our Blog</h2>
        <div class="blog-body-text">
          <p class=""> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <span class="blog-filter-by" id="age-hide"> Filter by
-          <span><img class="filter-by-arrows" src="./images/filter-by.png" alt="pan"/></span>
+       <div class="d-flex align-items-center">
+
+        
+        <span class="blog-filter-by " id="age-hide"> Filter by
+          <span>
+            <img class="filter-by-arrows" src="./images/filter-by.png" alt="pan"/>
+          </span>
         </span>
+
+        <div class="filter-by-text-desktop">
+          <div class="dropdown mx-2">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Age
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Pregnancy </a>
+              <a class="dropdown-item" href="#">Newborns & Babies
+              </a>
+              <a class="dropdown-item" href="#">Toddlers and Pre-School Kids
+              </a> <a class="dropdown-item" href="#">Primary School Kids
+
+              </a> <a class="dropdown-item" href="#">Teenagers
+              </a>
+            </div>
+          </div>
+          <div class="dropdown mx-2">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Category
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Pregnancy & birth
+              </a>
+              <a class="dropdown-item" href="#">Kids health
+              </a>
+              <a class="dropdown-item" href="#">Sleeping, feeding & settling
+              </a>
+              <a class="dropdown-item" href="#">Clothing & toiletries
+              </a>
+              <a class="dropdown-item" href="#">Activities & development
+              </a>
+              <a class="dropdown-item" href="#">Travel</a>
+              <a class="dropdown-item" href="#">Parent's health and lifestyle</a>
+            </div>
+          </div>
+        </div>
+        <!-- responsive lbog design -->
         <div class="filter-body-text">
         <div id="accordion">
           <!-- age -->
@@ -269,6 +335,10 @@
        
         </div>
        </div>
+       <!-- ----- -->
+       
+
+       </div>
         </div>
               
            
@@ -287,15 +357,15 @@
       <div class="col-md-6 col-12 p-5">
       <div class=""><img src="./images/blogOne.png"  alt="pan" class="blogImage img-fluid"/>
         <div class="blog-links">
-        <span><i class="fas fa-caret-right"></i>Kids Health</span>
-        <span><i class="fas fa-caret-right"></i>Child Eczema</span>
+        <span><a href="#"><i class="fas fa-caret-right"></i>Kids Health</a></span>
+        <span><a href="#"><i class="fas fa-caret-right"></i>Child Eczema</a></span>
       </div>
       </div>
       
       </div>
       <div class=" col-md-6 cols-12 p-5 text-left">
           <div class="eczema">
-          <a href="./blogDetails.html"><h5>Eczema in Children: 5 Treatments for Babies with Eczema</h5></a>
+          <a href="./blog-details.html"><h5>Eczema in Children: 5 Treatments for Babies with Eczema</h5></a>
           <p>Are you worried your little one has eczema? While baby skin is known for being soft, silky, and smooth, infant eczema....</p>
           <p class="pt-5">22 January, 2021</p>
           </div>
@@ -308,11 +378,14 @@
 <div class="container">
   <div class="row text-center">
       <div class=" col-md-3 col-sm-6 m-4">
+        <a href="">
+
+        </a>
           <div class="card cardContainer" style="width: 18rem">
       <img class="card-img-top" src="./images/blogThree.png" alt="pan"/>
       <div class="image-blog-links">
-        <span><i class="fas fa-caret-right"></i>Kids Health</span>
-        <span><i class="fas fa-caret-right"></i>Child Eczema</span>
+        <span><a href="#"><i class="fas fa-caret-right"></i>Kids Health</a></span>
+        <span><a href="#"><i class="fas fa-caret-right"></i>Child Eczema</a></span>
       </div>
       <div  class="card-body text-left">
           <h5 class="card-title">How To Use Essential Oils for Your Baby?</h5>
@@ -323,106 +396,126 @@
           </div>
           <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
       </div>
-    </div>
+          </div>
   </div> 
       <div  class=" col-md-3 col-sm-6 m-4">
+        <a href="#">
           <div class="card cardContainer" style="width: 18rem">
-      <img class="card-img-top" src="./images/blogFour.png" alt="pan"/>
-      <div class="image-blog-links">
-        <span><i class="fas fa-caret-right"></i>Kids Health</span>
-        <span><i class="fas fa-caret-right"></i>Child Eczema</span>
-      </div>
-      <div class="card-body text-left">
-          <h5 class="card-title">Is Iodine Essential for Health or Healthy Skin?</h5>
-          <div class="card-text">
-          <p>Lodine is an essential nutrient that helps our bodies to naturally detox in order to prevent harmful chemicals from affecting thyroid.. </p>
-          <p class="pt-5">22 January, 2021</p>
-          </div>
-          <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
-          </div>
-        </div>
+            <img class="card-img-top" src="./images/blogFour.png" alt="pan"/>
+            <div class="image-blog-links">
+              <span><a href="#"><i class="fas fa-caret-right"></i>Kids Health</a></span>
+              <span><a href="#"><i class="fas fa-caret-right"></i>Child Eczema</a></span>
+            </div>
+            <div class="card-body text-left">
+                <h5 class="card-title">Is Iodine Essential for Health or Healthy Skin?</h5>
+                <div class="card-text">
+                <p>Lodine is an essential nutrient that helps our bodies to naturally detox in order to prevent harmful chemicals from affecting thyroid.. </p>
+                <p class="pt-5">22 January, 2021</p>
+                </div>
+                <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
+                </div>
+                </div>
+                
+        </a>
+        
       </div>
       <div class=" col-md-3 col-sm-6 m-4">
+        <a href="#">
           <div class="card cardContainer" style="width: 18rem">
-      <img class="card-img-top" src="./images/blogTwo.png" />
-      <div class="image-blog-links">
-        <span><i class="fas fa-caret-right"></i>Kids Health</span>
-        <span><i class="fas fa-caret-right"></i>Child Eczema</span>
-      </div>
-      <div class="card-body text-left">
-          <h5 class="card-title">How To Use Essential Oils for Your Baby?</h5>
-          <div class="card-text">
-        <p>  Are you worried your little one has eczema? While baby skin is known for being soft, silky, and smooth, infant eczema....</p>
-          <p  class="pt-5">22 January, 2021</p>
-
-          </div>
-          <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
-        </div>
-      </div>
+            <img class="card-img-top" src="./images/blogTwo.png" />
+            <div class="image-blog-links">
+              <span><a href="#"><i class="fas fa-caret-right"></i>Kids Health</a></span>
+              <span><a href="#"><i class="fas fa-caret-right"></i>Child Eczema</a></span>
+            </div>
+            <div class="card-body text-left">
+                <h5 class="card-title">How To Use Essential Oils for Your Baby?</h5>
+                <div class="card-text">
+              <p>  Are you worried your little one has eczema? While baby skin is known for being soft, silky, and smooth, infant eczema....</p>
+                <p  class="pt-5">22 January, 2021</p>
+      
+                </div>
+                <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
+              </div>
+                </div>
+                
+        </a>
+        
     </div>
   </div>
       <div  class="row text-center">
-      <div class=" col-md-3 col-sm-6 m-4">
+        <a href="#">
           <div class="card cardContainer" style="width: 18rem">
-      <img class="card-img-top" src="./images/blogFive.png" alt="pan" />
-      <div class="image-blog-links">
-        <span><i class="fas fa-caret-right"></i>Kids Health</span>
-        <span><i class="fas fa-caret-right"></i>Child Eczema</span>
-      </div>
-      <div class="card-body text-left">
-          <h5 class="card-title">How to Treat the Eczema in Newborns</h5>
-          <div class="card-text">
-     <p>    An essential oil is a highly concentrated liquid that has volatile chemical compounds that are extracted from plants.</p> 
-          <p class="pt-5 mb-5">22 January, 2021</p>
-
-          </div>
-          <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
-        </div>
-      </div>
+            <img class="card-img-top" src="./images/blogFive.png" alt="pan" />
+            <div class="image-blog-links">
+              <span><a href="#"><i class="fas fa-caret-right"></i>Kids Health</a></span>
+              <span><a href="#"><i class="fas fa-caret-right"></i>Child Eczema</a></span>
+            </div>
+            <div class="card-body text-left">
+                <h5 class="card-title">How to Treat the Eczema in Newborns</h5>
+                <div class="card-text">
+           <p>    An essential oil is a highly concentrated liquid that has volatile chemical compounds that are extracted from plants.</p> 
+                <p class="pt-5 mb-5">22 January, 2021</p>
+      
+                </div>
+                <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
+              </div>
+                </div>
+                
+        </a>
+      <div class=" col-md-3 col-sm-6 m-4">
+       
     </div> 
       <div class=" col-md-3 col-sm-6 m-4">
+        <a href="#">
           <div  class="card cardContainer" style="width: 18rem">
-      <img class ="card-img-top" src="./images/blogSix.png" alt="pan" />
-      <div class="image-blog-links">
-        <span><i class="fas fa-caret-right"></i>Kids Health</span>
-        <span><i class="fas fa-caret-right"></i>Child Eczema</span>
-      </div>
-      <div class="card-body text-left">
-          <h5 class="card-title">Eczema in Children: 5 Treatments for Babies with Eczema</h5>
-          <div class="card-text">
-          <p>Lodine is an essential nutrient that helps our bodies to naturally detox in order to prevent harmful chemicals from affecting thyroid.. </p>
-          <p class="pt-5 ">22 January, 2021</p>
-          </div>
-          <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
-        </div>
-      </div>
+            <img class ="card-img-top" src="./images/blogSix.png" alt="pan" />
+            <div class="image-blog-links">
+              <span><a href="#"><i class="fas fa-caret-right"></i>Kids Health</a></span>
+              <span><a href="#"><i class="fas fa-caret-right"></i>Child Eczema</a></span>
+            </div>
+            <div class="card-body text-left">
+                <h5 class="card-title">Eczema in Children: 5 Treatments for Babies with Eczema</h5>
+                <div class="card-text">
+                <p>Lodine is an essential nutrient that helps our bodies to naturally detox in order to prevent harmful chemicals from affecting thyroid.. </p>
+                <p class="pt-5 ">22 January, 2021</p>
+                </div>
+                <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
+              </div>
+                </div>
+                
+        </a>
+       
     </div>
       <div class=" col-md-3 col-sm-6 m-4">
+        <a href="#">
           <div class="card cardContainer" style="width: 18rem">
-      <img class="card-img-top" src="./images/blogThree.png" alt="pan" />
-      <div class="image-blog-links">
-        <span><i class="fas fa-caret-right"></i>Kids Health</span>
-        <span><i class="fas fa-caret-right"></i>Child Eczema</span>
-      </div>
-      <div class="card-body text-left">
-          <h5 class="card-title">Why should an asthmatic use an inhaler?</h5>
-          <div class="card-text">
-        <p> Are you worried your little one has eczema? While baby skin is known for being soft, silky, and smooth, infant eczema....</p>
-          <p class="pt-5">22 January, 2021</p>
-          </div>
-          <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
-        </div>
-      </div>
+            <img class="card-img-top" src="./images/blogThree.png" alt="pan" />
+            <div class="image-blog-links">
+              <span><a href="#"><i class="fas fa-caret-right"></i>Kids Health</a></span>
+              <span><a href="#"><i class="fas fa-caret-right"></i>Child Eczema</a></span>
+            </div>
+            <div class="card-body text-left">
+                <h5 class="card-title">Why should an asthmatic use an inhaler?</h5>
+                <div class="card-text">
+              <p> Are you worried your little one has eczema? While baby skin is known for being soft, silky, and smooth, infant eczema....</p>
+                <p class="pt-5">22 January, 2021</p>
+                </div>
+                <!-- {/* <Button variant="primary">Go somewhere</Button> */} -->
+              </div>
+                </div>
+                
+        </a>
+       
     </div>
   </div>
       <div  class="row text-center">
           <div class=" col-md-12 col-sm-6 text-center py-5">
               <button  class=" btn loadMore">Load More <span class="arrow"> <i class="fas fa-chevron-right"></i></span></button>
-          </div>
+            </div>
       </div>
   </div>
 <!-- blog section four -->
-  <div  class="searchQuestion">
+  <div id="search-question" class="searchQuestion">
     <div class="container">
         <div class="row">
         <div class="col"><h1  class="searchUppercaseText">search</h1>
@@ -442,66 +535,69 @@
          
     </div>
 
-    <!-- footer -->
+  <!-- footer -->
 <div class="footerContainer">
-  
-  <div class="container">
-      <ul class="list-group list-group-horizontal">
-          <li class="list-group-item border-0">
-              <h3><span class="italicFooter">The</span>Tally</h3>
-              <span class="headingText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</span>
-              <div class="icons">
-                <span class="blueIcon"><i class="fab fa-facebook-f"></i></span>
-                <span class="blueIcon"><i class="fab fa-instagram"></i></span>
-                <span class="blueIcon"><i class="fab fa-twitter"></i></span>
-                 <span class="blueIcon"><i class="fab fa-youtube"></i></span>
-              </div>
-            </li>
-          <li class="list-group-item border-0">
-              <h4>Extras</h4>
-              <ul class="listUnstyled">
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>FAQ</li>
-              </ul>
-          </li>
-           <li class="list-group-item border-0">
-              <h4>Pages</h4>
-              <ul class="listUnstyled">
-              <li>About Us</li>
-              <li>Blog</li>
-              <li>Contact Us</li>
-              <li>Login</li>
-              <li>Register</li>
-              </ul>
-          </li>
-          <li class="list-group-item border-0">
-              <h4>Join our newsletter to stay up to date</h4>
-              <span class="mb-4">Id aliquip Lorem ut culpa cillum fugiat cillum aute.</span>
-          <!-- <li class="list-group-item border-0"> -->
-              <div class="formContainer">
-                  <form>
-                    <div class="input-group email-input mb-3">
-                      <input type="text" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2">
-                      <div class="input-group-append">
-                        <button class="btn" type="button" id="button-addon2">
-                          <span class="footerWorkIcon"><i class="fas fa-angle-right"></i></span></button>
-                      </div>
-                    </div>
-                     
-                    </form>
-              </div>
-          </li>
-          <!-- </li> -->
-        </ul>
-        <div>
-          <p class=" text-center mt-3 mb-5">Copyright © 2020 THE TALLY. All rights reserved.</p>
-    <img src="images/footerOne.png" class=" footerImage" alt="pan"/>
-
+  <hr/>
+    <div class="container">
+      <!-- .row>.col-md-4+.col- -->
+      <div class="row">
+       
+        <div class="col-md-3">
+          <h3><span class="italicFooter">The</span>Tally</h3>
+          <span class="headingText footer-first-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</span>
+          <div class="icons">
+            <span class="blueIcon"><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="blueIcon"><a href="#"><i class="fab fa-instagram"></i></a></span>
+            <span class="blueIcon"><a href="#"><i class="fab fa-twitter"></i></a></span>
+             <span class="blueIcon"><a href="#"><i class="fab fa-youtube"></i></a></span>
+          </div>
         </div>
-        
-    </div>
+        <div class="col-md-3">
+          <h4>Extras</h4>
+          <ul class="listUnstyled">
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a> </li>
+          <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Pages</h4>
+          <ul class="listUnstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Join our newsletter to stay up to date</h4>
+                <span class="mb-4">Id aliquip Lorem ut culpa cillum fugiat cillum aute.</span>
+            <!-- <li class="list-group-item border-0"> -->
+                <div class="formContainer">
+                    <form>
+                      <div class="input-group email-input mb-3">
+                        <input type="text" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn footer-button-left" type="button" id="button-addon2">
+                            <span class="footerWorkIcon"><i class="fas fa-angle-right"></i></span></button>
+                        </div>
+                      </div>
+                      </form>
+                </div>
+        </div>
+      </div>
+    
+          <div>
+            <hr/>
+            <p class=" text-center mt-3 mb-5">Copyright © 2020 THE TALLY. All rights reserved.</p>
+          </div>
+      </div>
+      <img src="images/footerOne.png" class=" footerImage" alt="pan"/>
+      
 </div>
+<!-- ------ -->
+
 <script src="js/custom.js"></script>
 
       </body>

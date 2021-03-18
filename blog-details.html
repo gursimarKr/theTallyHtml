@@ -22,8 +22,7 @@
         </script> 
 </head>
 <body>
-    <!-- header -->
-<!-- header -->
+   <!-- header -->
 <div class="headerContainer">
   <nav class="navbar navbar-expand-lg " id="sidebar">
     <button 
@@ -43,7 +42,7 @@
      
     
       <div class="dropdown order-lg-1 sydney-visibility">
-        <button class="btn sydney-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn sydney-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
          sydney
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -81,7 +80,7 @@
     <form class="order-lg-2 ml-lg-auto">
       <div class="form-group m-0">  
          <!-- <button class="btn circled" type="submit"><i class="fas fa-search"></i></button> -->
-         <img class="search-icon" src="./images/search-icon.png" alt="pan" />
+         <a href="#search-question"><img class="search-icon" src="./images/search-icon.png" alt="pan" /></a>
       </div>
     </form>
       <div class="collapse navbar-collapse  blue-header-dropdown" id="navbarSupportedContent">
@@ -100,14 +99,23 @@
               </a>
 
             <div class="dropdown-menu light-blue-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Pregnancy </a>
-              <a class="dropdown-item" href="#">Newborns & Babies
-              </a>
-              <a class="dropdown-item" href="#">Toddlers and Pre-School Kids
-              </a>
-              <a class="dropdown-item" href="#">Primary School Kids
-              </a>
-              <a class="dropdown-item" href="#">Teenagers </a>
+             <ul>
+               <li>
+                <a class="dropdown-item" href="#">Pregnancy </a>
+               </li>
+               <li>
+                <a class="dropdown-item" href="#">Newborns & Babies</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Toddlers and Pre-School Kids</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Primary School Kids</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Teenagers </a>
+               </li>
+             </ul>
             </div>
           </li>
           <li class="nav-item dropdown ">
@@ -117,22 +125,34 @@
               <i class="fas fa-minus dropdown-minus-icon"></i>
             </a>
             <div class="dropdown-menu light-blue-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Pregnancy & birth
-              </a>
-              <a class="dropdown-item" href="#">Kids health
-              </a>  <a class="dropdown-item" href="#">Sleeping, feeding & settling
-
-              </a>  <a class="dropdown-item" href="#">Clothing & toiletries
-
-              </a>  <a class="dropdown-item" href="#">Activities & development
-
-              </a>  <a class="dropdown-item" href="#">Travel
-              </a>  <a class="dropdown-item" href="#">Parent's health and lifestyle
-              </a>
+        <ul>
+          <li>
+            <a class="dropdown-item" href="#">Pregnancy & birth
+            </a>
+           </li>
+            <a class="dropdown-item" href="#">Kids health
+            </a> 
+            <li>
+            <a class="dropdown-item" href="#">Sleeping, feeding & settling
+            </a>  
+          </li>
+          <li>  <a class="dropdown-item" href="#">Clothing & toiletries
+          </a> 
+        </li>
+          <li>
+            <a class="dropdown-item" href="#">Activities & development</a> 
+          </li>
+           <li>
+            <a class="dropdown-item" href="#">Travel</a> 
+           </li> 
+            <li>
+              <a class="dropdown-item" href="#">Parent's health and lifestyle</a>
+            </li>
+        </ul>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link " href="./blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link " href="./blog-details.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Blog
               
             </a>
@@ -153,6 +173,7 @@
   </nav>
 </div>
        <!-- ------ -->
+   
     <div><img src="./images/blogDetailsOne.png" class="img-fluid headImage" alt="Responsive image"/>
 
   
@@ -265,7 +286,7 @@
                 </div>
                 </div>
                 <!-- section six -->
-                <div  class="searchQuestion">
+                <div id="search-question" class="searchQuestion">
                   <div class="container">
                       <div class="row">
                       <div class="col"><h1  class="searchUppercaseText">search</h1>
@@ -286,63 +307,67 @@
                   </div>
                       
                 
-                <!-- footer -->
-                <div class="footerContainer">
-                  
-                    <div class="container">
-                        <ul class="list-group list-group-horizontal">
-                            <li class="list-group-item border-0">
-                                <h3><span class="italicFooter">The</span>Tally</h3>
-                                <span class="headingText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</span>
-                                <div class="icons">
-                                  <span class="blueIcon"><i class="fab fa-facebook-f"></i></span>
-                                  <span class="blueIcon"><i class="fab fa-instagram"></i></span>
-                                  <span class="blueIcon"><i class="fab fa-twitter"></i></span>
-                                   <span class="blueIcon"><i class="fab fa-youtube"></i></span>
-                                </div>
-                              </li>
-                            <li class="list-group-item border-0">
-                                <h4>Extras</h4>
-                                <ul class="listUnstyled">
-                                <li>Terms & Conditions</li>
-                                <li>Privacy Policy</li>
-                                <li>FAQ</li>
-                                </ul>
-                            </li>
-                             <li class="list-group-item border-0">
-                                <h4>Pages</h4>
-                                <ul class="listUnstyled">
-                                <li>About Us</li>
-                                <li>Blog</li>
-                                <li>Contact Us</li>
-                                <li>Login</li>
-                                <li>Register</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item border-0">
-                                <h4>Join our newsletter to stay up to date</h4>
-                                <span class="mb-4">Id aliquip Lorem ut culpa cillum fugiat cillum aute.</span>
-                            <!-- <li class="list-group-item border-0"> -->
-                                <div class="formContainer">
-                                    <form>
-                                      <div class="input-group email-input mb-3">
-                                        <input type="text" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2">
-                                        <div class="input-group-append">
-                                          <button class="btn" type="button" id="button-addon2">
-                                            <span class="footerWorkIcon"><i class="fas fa-angle-right"></i></span></button>
-                                        </div>
-                                      </div>
-                                       
-                                      </form>
-                                </div>
-                            </li>
-                            <!-- </li> -->
-                          </ul>
-                          <div>
-                            <p class=" text-center mt-3 mb-5">Copyright © 2020 THE TALLY. All rights reserved.</p>
-                          </div>
+<!-- footer -->
+<div class="footerContainer">
+  <hr/>
+    <div class="container">
+      <!-- .row>.col-md-4+.col- -->
+      <div class="row">
+       
+        <div class="col-md-3">
+          <h3><span class="italicFooter">The</span>Tally</h3>
+          <span class="headingText footer-first-item">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</span>
+          <div class="icons">
+            <span class="blueIcon"><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+            <span class="blueIcon"><a href="#"><i class="fab fa-instagram"></i></a></span>
+            <span class="blueIcon"><a href="#"><i class="fab fa-twitter"></i></a></span>
+             <span class="blueIcon"><a href="#"><i class="fab fa-youtube"></i></a></span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4>Extras</h4>
+          <ul class="listUnstyled">
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a> </li>
+          <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Pages</h4>
+          <ul class="listUnstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Join our newsletter to stay up to date</h4>
+                <span class="mb-4">Id aliquip Lorem ut culpa cillum fugiat cillum aute.</span>
+            <!-- <li class="list-group-item border-0"> -->
+                <div class="formContainer">
+                    <form>
+                      <div class="input-group email-input mb-3">
+                        <input type="text" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                          <button class="btn footer-button-left" type="button" id="button-addon2">
+                            <span class="footerWorkIcon"><i class="fas fa-angle-right"></i></span></button>
+                        </div>
                       </div>
-                      <img src="images/footerOne.png" class=" footerImage" alt="pan"/>
+                      </form>
                 </div>
+        </div>
+      </div>
+    
+          <div>
+            <hr/>
+            <p class=" text-center mt-3 mb-5">Copyright © 2020 THE TALLY. All rights reserved.</p>
+          </div>
+      </div>
+      <img src="images/footerOne.png" class=" footerImage" alt="pan"/>
+      
+</div>
+<!-- ------ -->
 </body>
 </html>
