@@ -73,7 +73,7 @@
     width: 82%;
 }
 .hidden-header-icons{
-    visibility: hidden;
+    display: none;
 }
 /* .dropdown-toggle{
     padding: 0;
@@ -1132,8 +1132,9 @@ text-transform: uppercase;
   display: none;
 }
 .dropdown-bold-category.dropdown-toggler .dropdown-minus-icon{
-   display: inline;    
+   display: none;    
 }
+/* .dropdown-bold-category.dropdown-toggler .dropdown-minus-icon */
 
 .blog-category-backbround.blog-age.accordion-minus-icon{
     display: none;

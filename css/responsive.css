@@ -549,4 +549,7 @@
     .navbar-collapse.show{
         left: 0;
     }
+    .dropdown-bold-category.dropdown-toggler .dropdown-minus-icon{
+        display: inline;
+    }
 }
