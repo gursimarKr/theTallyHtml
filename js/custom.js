@@ -52,5 +52,9 @@ $(document).ready(function(){
         $(".blue-location-icon").hide();
         $(".location-icon").show();
     })
+    
+
+    // blog page
   
+     
 });

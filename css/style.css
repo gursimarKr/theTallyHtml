@@ -1134,3 +1134,13 @@ text-transform: uppercase;
 .dropdown-bold-category.dropdown-toggler .dropdown-minus-icon{
    display: inline;    
 }
+
+.blog-category-backbround.blog-age.accordion-minus-icon{
+    display: none;
+  }
+.blog-category-backbround.blog-age.blog-dropdown-toggler.accordion-plus-icon{
+  display: none;
+}
+.blog-category-backbround.blog-age.blog-dropdown-toggler.accordion-minus-icon{
+   display: inline;    
+}
